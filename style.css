@@ -2,14 +2,14 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    height: 250px;
     background-image: url("entete2.png"); /* Image de fond */
     background-size: cover; /* Ajuste l’image */
     background-position: center; /* Centre l’image */
 }
 
 header img {
-    max-width: 800px; /* Ajuste la taille max du logo */
+    max-width: 650px; /* Ajuste la taille max du logo */
     height: auto; /* Garde les proportions */
 }
 
