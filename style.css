@@ -1,0 +1,18 @@
+header {
+    display: flex;
+    justify-content: center; /* Centre le logo horizontalement */
+    align-items: center; /* Centre le logo verticalement */
+    height: 100px; /* Hauteur de l'en-tête */
+    background-color: #f8f8f8; /* Couleur de fond de l'entête */
+    padding: 10px;
+}
+
+header img {
+    max-width: 150px; /* Ajuste la taille max du logo */
+    height: auto; /* Garde les proportions */
+}
+
+main {
+    text-align: center;
+    margin-top: 20px;
+}
