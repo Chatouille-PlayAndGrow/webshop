@@ -12,6 +12,7 @@ header {
 header img {
     max-width: 550px; /* Ajuste la taille max du logo */
     height: auto; /* Garde les proportions */
+    border-radius: 50px;  /* Ajuste l’effet des coins */
 }
 
 main {
