@@ -2,7 +2,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 250px;
+    height: 225px;
     background: linear-gradient(to right, #ff7e5f, #feb47b);
     /*background-image: url("entete2.png"); /* Image de fond */
     /*background-size: cover; /* Ajuste l’image */
@@ -12,7 +12,7 @@ header {
 header img {
     max-width: 380px; /* Ajuste la taille max du logo */
     height: auto; /* Garde les proportions */
-    border-radius: 75px;  /* Ajuste l’effet des coins */
+    border-radius: 70px;  /* Ajuste l’effet des coins */
 }
 
 main {
