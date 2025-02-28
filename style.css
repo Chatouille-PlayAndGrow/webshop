@@ -13,7 +13,7 @@ header img {
     max-width: 380px; /* Ajuste la taille max du logo */
     height: auto; /* Garde les proportions */
     /*border-radius: 70px;  /* Ajuste l’effet des coins */
-    clip-path: polygon(10% 0%, 90% 0%, 120% 30%, 120% 70%, 90% 100%, 10% 100%, -20% 70%, -20% 30%);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
 }
 
 main {
