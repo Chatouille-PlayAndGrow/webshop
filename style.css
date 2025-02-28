@@ -2,18 +2,18 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150px;
-    background-image: url("entete2_small.png"); /* Image de fond */
+    height: 200px;
+    background-image: url("entete2.png"); /* Image de fond */
     background-size: cover; /* Ajuste l’image */
     background-position: center; /* Centre l’image */
 }
 
 header img {
-    max-width: 400px; /* Ajuste la taille max du logo */
+    max-width: 800px; /* Ajuste la taille max du logo */
     height: auto; /* Garde les proportions */
 }
 
 main {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 15px;
 }
