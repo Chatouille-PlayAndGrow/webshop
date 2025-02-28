@@ -4,7 +4,7 @@ header {
     align-items: center;
     height: 150px;
     background-image: url("entete2.png"); /* Image de fond */
-    background-size: cover; /* Ajuste l’image */
+    background-size: 100px /*cover; /* Ajuste l’image */
     background-position: center; /* Centre l’image */
 }
 
