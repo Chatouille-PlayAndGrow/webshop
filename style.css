@@ -28,6 +28,7 @@ main {
     flex-wrap: wrap;
     padding: 20px;
     max-width: 1000px; /* Pour éviter que ça prenne toute la largeur */
+    margin: auto;
 }
 
 .product {
