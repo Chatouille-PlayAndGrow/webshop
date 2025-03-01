@@ -2,8 +2,9 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    height: 180px;
+    background_color: #FFEBCD;
+    /*background: linear-gradient(to right, #ff7e5f, #feb47b); */
     /*background-image: url("entete2.png"); /* Image de fond */
     /*background-size: cover; /* Ajuste l’image */
     /*background-position: center; /* Centre l’image */ 
