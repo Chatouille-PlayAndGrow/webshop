@@ -73,13 +73,19 @@ body {
     margin: 10px 0;
 }
 
-icon{
+.icons {
     display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
-    font-size: 18px;
+    justify-content: space-between; /* Espacement égal entre les boîtes */
+    align-items: center; /* Centre verticalement */
+    gap: 20px; /* Ajoute un espace entre les boîtes */
+    padding: 20px; /* Ajoute de l'espace autour du conteneur */
+}
+
+.box {
+    background: none; /* Pas de couleur de fond */
+    padding: 10px 20px; /* Ajoute un peu d’espace à l’intérieur */
+    font-size: 18px; /* Ajuste la taille du texte */
     color: #FFB6C1;
-    margin: 10px 0;
 }
 /*
 button {
