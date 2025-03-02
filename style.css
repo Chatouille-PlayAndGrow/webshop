@@ -87,6 +87,7 @@ body {
     padding: 10px 20px; /* Ajoute un peu d’espace à l’intérieur */
     font-size: 18px; /* Ajuste la taille du texte */
     color: #FFB6C1;
+    font-weight: bold; /* Rend le texte en gras */
 }
 /*
 button {
