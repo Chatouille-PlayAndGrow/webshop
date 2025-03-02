@@ -79,15 +79,13 @@ body {
     align-items: center; /* Centre verticalement */
     gap: 20px; /* Ajoute un espace entre les boîtes */
     padding: 20px; /* Ajoute de l'espace autour du conteneur */
-    text-align: left;
 }
 
 .box {
     background: none; /* Pas de couleur de fond */
-    text-align: left; /* Aligne le texte à gauche */
     padding: 10px 20px; /* Ajoute un peu d’espace à l’intérieur */
     font-size: 18px; /* Ajuste la taille du texte */
-    color: #FFB6C1;
+    color:#DB7093;
     font-weight: bold; /* Rend le texte en gras */
 }
 /*
