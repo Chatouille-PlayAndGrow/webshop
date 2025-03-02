@@ -75,7 +75,7 @@ body {
 
 .icons {
     display: flex;
-    justify-content: flex-start; /* Espacement égal entre les boîtes */
+    justify-content: flex-end; /* Alignement à droite */
     align-items: center; /* Centre verticalement */
     gap: 20px; /* Ajoute un espace entre les boîtes */
     padding: 20px; /* Ajoute de l'espace autour du conteneur */
