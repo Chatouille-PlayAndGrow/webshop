@@ -2,7 +2,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 150px;
     /*background-color: #FFEBCD; */
     /*background: linear-gradient(to right, #ff7e5f, #feb47b); */
     background-image: url("entete_site.jpg"); /* Image de fond */
@@ -75,10 +75,11 @@ body {
 
 .icons {
     display: flex;
-    justify-content: space-between; /* Espacement égal entre les boîtes */
+    justify-content: flex-start; /* Espacement égal entre les boîtes */
     align-items: center; /* Centre verticalement */
     gap: 20px; /* Ajoute un espace entre les boîtes */
     padding: 20px; /* Ajoute de l'espace autour du conteneur */
+    text-align: left;
 }
 
 .box {
