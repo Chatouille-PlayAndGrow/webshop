@@ -11,7 +11,7 @@ header {
 }
 
 header img {
-    max-width: 340px; /* Ajuste la taille max du logo */
+    max-width: 280px; /* Ajuste la taille max du logo */
     height: auto; /* Garde les proportions */
     border-radius: 70px;  /* Ajuste l’effet des coins */
     /* 
@@ -26,6 +26,9 @@ header img {
 main {
     text-align: center;
     margin-top: 5px;
+}
+body {
+    background-color: #FFFAF0; /* Gris clair, change la couleur selon ton choix */
 }
 .products {
     display: flex;
