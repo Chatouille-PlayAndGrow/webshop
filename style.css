@@ -28,7 +28,7 @@ main {
     margin-top: 5px;
 }
 body {
-    background-color: #FFFAF0; /* Gris clair, change la couleur selon ton choix */
+    background-color: #FFFAFA; /* Gris clair, change la couleur selon ton choix */
 }
 .products {
     display: flex;
@@ -71,6 +71,17 @@ body {
     font-weight: bold;
     color: #27ae60;
     margin: 10px 0;
+}
+
+icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+    font-size: 18px;
+    color: #555;
 }
 /*
 button {
