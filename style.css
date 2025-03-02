@@ -76,12 +76,12 @@ body {
 icon{
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 20px;
     flex-wrap: wrap;
     padding: 20px;
     font-size: 18px;
-    color: #555;
+    color: #FFB6C1;
+    margin: auto;
 }
 /*
 button {
