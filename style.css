@@ -2,7 +2,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150px;
+    height: 100px;
     /*background-color: #FFEBCD; */
     /*background: linear-gradient(to right, #ff7e5f, #feb47b); */
     background-image: url("entete_site.jpg"); /* Image de fond */
@@ -11,7 +11,7 @@ header {
 }
 
 header img {
-    max-width: 280px; /* Ajuste la taille max du logo */
+    max-width: 200px; /* Ajuste la taille max du logo */
     height: auto; /* Garde les proportions */
     border-radius: 70px;  /* Ajuste l’effet des coins */
     /* 
@@ -75,13 +75,11 @@ body {
 
 icon{
     display: flex;
-    justify-content: center;
-    gap: 20px;
     flex-wrap: wrap;
     padding: 20px;
     font-size: 18px;
     color: #FFB6C1;
-    margin: auto;
+    margin: 10px 0;
 }
 /*
 button {
