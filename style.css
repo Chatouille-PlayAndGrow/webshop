@@ -26,6 +26,7 @@ header img {
 main {
     text-align: center;
     margin-top: 5px;
+    background-color: #F0EAEA;
 }
 body {
     background-color: #FFFAFA; /* Gris clair, change la couleur selon ton choix */
