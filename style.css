@@ -26,7 +26,6 @@ header img {
 main {
     text-align: center;
     margin-top: 5px;
-    background-color: #F0EAEA;
 }
 body {
     background-color: #FFFAFA; /* Gris clair, change la couleur selon ton choix */
@@ -80,6 +79,7 @@ body {
     align-items: center; /* Centre verticalement */
     gap: 20px; /* Ajoute un espace entre les boîtes */
     padding: 20px; /* Ajoute de l'espace autour du conteneur */
+    background-color: #F0EAEA;
 }
 
 .box {
