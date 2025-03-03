@@ -77,14 +77,14 @@ body {
     display: flex;
     justify-content: flex-end; /* Alignement à droite */
     align-items: center; /* Centre verticalement */
-    gap: 20px; /* Ajoute un espace entre les boîtes */
+    gap: 15px; /* Ajoute un espace entre les boîtes */
     padding: 20px; /* Ajoute de l'espace autour du conteneur */
     background-color: #F0EAEA;
 }
 
 .box {
     background: none; /* Pas de couleur de fond */
-    padding: 10px 20px; /* Ajoute un peu d’espace à l’intérieur */
+    /*padding: 10px 20px; /* Ajoute un peu d’espace à l’intérieur */
     font-size: 18px; /* Ajuste la taille du texte */
     color:#DB7093;
     font-weight: bold; /* Rend le texte en gras */
