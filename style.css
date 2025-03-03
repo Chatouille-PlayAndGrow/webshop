@@ -14,6 +14,7 @@ header img {
     max-width: 240px; /* Ajuste la taille max du logo */
     height: auto; /* Garde les proportions */
     border-radius: 70px;  /* Ajuste l’effet des coins */
+    margin-bottom: 15px; /* Ajoute un espace sous l'en-tête */
     /* 
     clip-path: polygon(10% 0%, 90% 0%, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0% 90%, 0% 10%); 
     outline: 5px solid #ff6600; /* Bordure orange 
