@@ -5,7 +5,7 @@ header {
     height: 150px;
     /*background-color: #FFEBCD; */
     /*background: linear-gradient(to right, #ff7e5f, #feb47b); */
-    background-image: url("IMG_0429.jpeg"); /* Image de fond */
+    background-image: url("Entete_site_logo.png"); /* Image de fond */
     background-size: cover; /* Ajuste l’image */
     background-position: center; /* Centre l’image */ 
 }
