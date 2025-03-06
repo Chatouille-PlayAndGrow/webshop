@@ -7,7 +7,8 @@ header {
     /*background: linear-gradient(to right, #ff7e5f, #feb47b); */
     background-image: url("Entete_site_logo.png"); /* Image de fond */
     background-size: cover; /* Ajuste l’image */
-    background-position: center; /* Centre l’image */ 
+    background-position: center; /* Centre l’image */
+    margin-bottom: 30px; 
 }
 
 header img {
