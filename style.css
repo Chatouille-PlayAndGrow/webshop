@@ -33,11 +33,11 @@ header img {
         background-size: cover; /* Ajuste l’image */
         background-position: center; /* Centre l’image */
         margin-bottom: 10px; 
-        max-width: 1850px;
-        height: 250px;
+        max-width: 1900px;
+        height: 255px;
     }
     header img {
-        max-width: 265px; /* Ajuste la taille max du logo */
+        max-width: 300px; /* Ajuste la taille max du logo */
         height: auto; /* Garde les proportions */
         border-radius: 70px;  /* Ajuste l’effet des coins */
         margin-bottom: 15px; /* Ajoute un espace sous l'en-tête */
