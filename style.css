@@ -37,7 +37,7 @@ header img {
         height: 255px;
     }
     header img {
-        max-width: 300px; /* Ajuste la taille max du logo */
+        max-width: 350px; /* Ajuste la taille max du logo */
         height: auto; /* Garde les proportions */
         border-radius: 70px;  /* Ajuste l’effet des coins */
         margin-bottom: 15px; /* Ajoute un espace sous l'en-tête */
