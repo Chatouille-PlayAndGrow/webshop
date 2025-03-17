@@ -10,20 +10,6 @@ header {
     height: 150px;
 }
 
-@media screen and (min-width: 1600px) {
-    header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-image: url("Entete_site_logo.png"); /* Image de fond */
-        background-size: cover; /* Ajuste l’image */
-        background-position: center; /* Centre l’image */
-        margin-bottom: 10px; 
-        max-width: 1800px;
-        height: 250px;
-    }
-}
-
 header img {
     max-width: 240px; /* Ajuste la taille max du logo */
     height: auto; /* Garde les proportions */
@@ -36,6 +22,26 @@ header img {
     
     border: 5px solid #ff6600; /* Bordure orange 
     */
+}
+
+@media screen and (min-width: 1600px) {
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("Entete_site_logo.png"); /* Image de fond */
+        background-size: cover; /* Ajuste l’image */
+        background-position: center; /* Centre l’image */
+        margin-bottom: 10px; 
+        max-width: 1850px;
+        height: 250px;
+    }
+    header img {
+        max-width: 265px; /* Ajuste la taille max du logo */
+        height: auto; /* Garde les proportions */
+        border-radius: 70px;  /* Ajuste l’effet des coins */
+        margin-bottom: 15px; /* Ajoute un espace sous l'en-tête */
+    }
 }
 
 main {
