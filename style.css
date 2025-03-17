@@ -6,7 +6,7 @@ header {
     background-size: cover; /* Ajuste l’image */
     background-position: center; /* Centre l’image */
     margin-bottom: 10px; 
-    width: 2000px;
+    max-width: 1600px;
     height: 150px;
 }
 
