@@ -10,6 +10,20 @@ header {
     height: 150px;
 }
 
+@media screen and (min-width: 1600px) {
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("Entete_site_logo.png"); /* Image de fond */
+        background-size: cover; /* Ajuste l’image */
+        background-position: center; /* Centre l’image */
+        margin-bottom: 10px; 
+        max-width: 1900px;
+        height: 150px;
+    }
+}
+
 header img {
     max-width: 240px; /* Ajuste la taille max du logo */
     height: auto; /* Garde les proportions */
