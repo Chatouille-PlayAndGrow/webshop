@@ -49,6 +49,7 @@ header img { /*Specifications du logo qui se met par dessus l'entete au dessus d
 .titlestyle { /* Texte descriptif juste après l'entete*/
     text-align: center;
     width: 100%;
+    font-size: 30px;
 }
 
 body { /* definit les spécifications dans le body: couleur du fond*/
@@ -75,7 +76,7 @@ aside {
 }
 
 aside h2 {
-    font-size: 23px;
+    font-size: 18px;
     margin-bottom: 10px;
 }
 
@@ -130,6 +131,7 @@ aside ul li a:hover {
     /*margin: auto; */
     width: 75%;
     height: auto;
+    max-height: 200px;
 }
 
 .product {
