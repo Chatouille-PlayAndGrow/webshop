@@ -1,3 +1,4 @@
+/* ---- Style de l'entete du site web ---- */
 header { /* Entete avec fond au dessus de la page web*/
     display: flex;
     justify-content: center;
@@ -37,7 +38,7 @@ header img { /*Specifications du logo qui se met par dessus l'entete au dessus d
         margin-bottom: 15px; /* Ajoute un espace sous l'en-tête */
     }
 }
-
+/* ---- Body ---- */
 txt_descrip { /* Texte descriptif juste après l'entete*/
     text-align: center;
     margin-top: 5px;
@@ -48,6 +49,15 @@ body { /* definit les spécifications dans le body: couleur du fond*/
     background-color: #FFFAFA; /* Gris clair, change la couleur selon ton choix */
 }
 
+/* ---- Affichage et style de l'encadré à gauche avec les hyperlinks---- */
+.sidebar{ 
+    width: = 25%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* ---- Affichage et style des produits ---- */
 .products { 
     display: flex;
     justify-content: center;
@@ -56,6 +66,7 @@ body { /* definit les spécifications dans le body: couleur du fond*/
     padding: 20px;
     max-width: 1000px; /* Pour éviter que ça prenne toute la largeur */
     margin: auto;
+    width: 75%;
 }
 
 .product {
