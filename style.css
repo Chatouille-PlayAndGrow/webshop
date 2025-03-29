@@ -66,11 +66,11 @@ aside {
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     /*min-height: 100vh; /* Prend toute la hauteur */
-    height: 100vh;
+    height: 300px;
 }
 
 aside h2 {
-    font-size: 22px;
+    font-size: 23px;
     margin-bottom: 10px;
 }
 
@@ -146,12 +146,12 @@ aside ul li a:hover {
 }
 
 .product h2 { /*spécifications de l'affichage du nom du produit*/
-    font-size: 18px;
+    font-size: 23px;
     margin: 10px 0;
 }
 
 .product p { /*spécifications de l'affichage du descriptif du produit*/
-    font-size: 14px;
+    font-size: 16px;
     color: #555;
 }
 
