@@ -46,15 +46,12 @@ txtdescrip { /* Texte descriptif juste après l'entete*/
 }
 
 body { /* definit les spécifications dans le body: couleur du fond*/
-    display: flex;
-    flex-wrap: wrap;
     background-color: #FFFAFA; /* Gris clair, change la couleur selon ton choix */
 }
 
-
 /* ---- Affichage et style de l'encadré à gauche avec les hyperlinks---- */
 .sidebar{ 
-    width: = 25%;
+    width: 25%;
     background-color: #f4f4f4;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
@@ -87,12 +84,12 @@ body { /* definit les spécifications dans le body: couleur du fond*/
     border-radius: 10px;
 }
 
-.product pdtname { /*spécifications de l'affichage du nom du produit*/
+.product h2 { /*spécifications de l'affichage du nom du produit*/
     font-size: 18px;
     margin: 10px 0;
 }
 
-.product pdtdescr { /*spécifications de l'affichage du descriptif du produit*/
+.product p { /*spécifications de l'affichage du descriptif du produit*/
     font-size: 14px;
     color: #555;
 }
