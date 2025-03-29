@@ -169,3 +169,18 @@ aside ul li a:hover {
     color: #27ae60;
     margin: 10px 0;
 }
+
+.button-panier {
+    background-color: #27ae60; /* Vert */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.button_panier:hover {
+    background-color: #219150; /* Vert plus foncé */
+}
