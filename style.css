@@ -46,6 +46,11 @@ header img { /*Specifications du logo qui se met par dessus l'entete au dessus d
     width: 100%;
 }
 
+.titlestyle { /* Texte descriptif juste après l'entete*/
+    text-align: center;
+    width: 100%;
+}
+
 body { /* definit les spécifications dans le body: couleur du fond*/
     background-color: #FFFAFA; /* Gris clair, change la couleur selon ton choix */
 }
