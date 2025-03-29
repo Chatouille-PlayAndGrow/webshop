@@ -49,6 +49,7 @@ body { /* definit les spécifications dans le body: couleur du fond*/
     background-color: #FFFAFA; /* Gris clair, change la couleur selon ton choix */
 }
 
+
 /* ---- Affichage et style de l'encadré à gauche avec les hyperlinks---- */
 .sidebar{ 
     width: = 25%;
