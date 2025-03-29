@@ -65,7 +65,8 @@ aside {
     background-color: #EEE8AA;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    min-height: 100vh; /* Prend toute la hauteur */
+    /*min-height: 100vh; /* Prend toute la hauteur */
+    height: 150px;
 }
 
 aside h2 {
@@ -123,10 +124,12 @@ aside ul li a:hover {
     /*max-width: 1000px; /* Pour éviter que ça prenne toute la largeur */
     /*margin: auto; */
     width: 75%;
+    height: auto;
 }
 
 .product {
     width: 250px;
+    height: 100px
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 15px;
@@ -138,6 +141,8 @@ aside ul li a:hover {
 .product img { /*spécifications de l'image du produit*/
     width: 100%;
     border-radius: 10px;
+    max-height: 80px; /* Limite la taille de l'image à 200px */
+    object-fit: cover; /* Pour que l'image soit bien adaptée sans déformation */
 }
 
 .product h2 { /*spécifications de l'affichage du nom du produit*/
