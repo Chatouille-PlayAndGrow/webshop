@@ -62,11 +62,11 @@ body { /* definit les spécifications dans le body: couleur du fond*/
 /* ---- Barre latérale ---- */
 aside {
     width: 18%;
-    background-color: #EEE8AA;
+    background-color: #DDA0DD;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     /*min-height: 100vh; /* Prend toute la hauteur */
-    height: 150px;
+    height: 100vh;
 }
 
 aside h2 {
