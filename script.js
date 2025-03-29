@@ -56,12 +56,21 @@ function afficherPanier() {
 
     panier.forEach(produit => {
         let li = document.createElement("li");
-        li.textContent = `${produit.nom} - ${produit.prix}€ x ${produit.quantite}`;
+        li.textContent = `${produit.nom} - ${produit.prix}€ x ${produit.quantite} <button class="btn-action" onclick="supprimerProduit(${index})">❌</button>`;
         listePanier.appendChild(li);
         total += produit.prix * produit.quantite;
     });
 
     totalElement.textContent = total.toFixed(2);
+}
+
+// Fonction pour supprimer un produit du panier
+function supprimerProduit(index) {
+    let panier = getPanier();
+    panier.splice(index, 1); // Supprime l'élément à cet index
+    savePanier(panier);
+    afficherPanier();
+    mettreAJourCompteurPanier();
 }
 
 // Vider le panier
