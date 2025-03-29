@@ -183,3 +183,30 @@ aside ul li a:hover {
 .button-panier:hover {
     background-color: #20B2AA; 
 }
+
+/* Style général du panier */
+.panier-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Liste des produits */
+.liste-panier {
+    list-style: none;
+    padding: 0;
+}
+
+.liste-panier li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
