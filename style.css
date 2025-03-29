@@ -39,7 +39,7 @@ header img { /*Specifications du logo qui se met par dessus l'entete au dessus d
     }
 }
 /* ---- Body ---- */
-txt_descrip { /* Texte descriptif juste après l'entete*/
+txtdescrip { /* Texte descriptif juste après l'entete*/
     text-align: center;
     margin-top: 5px;
     padding: 20px;
@@ -85,12 +85,12 @@ body { /* definit les spécifications dans le body: couleur du fond*/
     border-radius: 10px;
 }
 
-.product pdt_name { /*spécifications de l'affichage du nom du produit*/
+.product pdtname { /*spécifications de l'affichage du nom du produit*/
     font-size: 18px;
     margin: 10px 0;
 }
 
-.product pdt_descr { /*spécifications de l'affichage du descriptif du produit*/
+.product pdtdescr { /*spécifications de l'affichage du descriptif du produit*/
     font-size: 14px;
     color: #555;
 }
