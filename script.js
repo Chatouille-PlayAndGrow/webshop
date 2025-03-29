@@ -27,7 +27,7 @@ function ajouterAuPanier(produit) {
 
 // Écoute les clics sur tous les boutons "Ajouter au panier"
 document.addEventListener("DOMContentLoaded", function() {
-    document.querySelectorAll(".btn-ajouter").forEach(button => {
+    document.querySelectorAll(".button-panier").forEach(button => {
         button.addEventListener("click", function() {
             let produitElement = this.closest(".product");
             let produit = {
