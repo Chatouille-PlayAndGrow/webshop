@@ -46,6 +46,8 @@ txtdescrip { /* Texte descriptif juste après l'entete*/
 }
 
 body { /* definit les spécifications dans le body: couleur du fond*/
+    display: flex;
+    flex-wrap: wrap;
     background-color: #FFFAFA; /* Gris clair, change la couleur selon ton choix */
 }
 
@@ -65,7 +67,7 @@ body { /* definit les spécifications dans le body: couleur du fond*/
     gap: 20px;
     flex-wrap: wrap;
     padding: 20px;
-    max-width: 1000px; /* Pour éviter que ça prenne toute la largeur */
+    /*max-width: 1000px; /* Pour éviter que ça prenne toute la largeur */
     margin: auto;
     width: 75%;
 }
