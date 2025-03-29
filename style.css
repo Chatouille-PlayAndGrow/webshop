@@ -51,7 +51,7 @@ body { /* definit les spécifications dans le body: couleur du fond*/
 }
 
 /* ---- Corps principal ---- */
-.main {
+.main-content {
     display: flex;
     /*justify-content: flex-start;*/
     gap: 20px;
