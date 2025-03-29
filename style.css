@@ -48,8 +48,14 @@ header img { /*Specifications du logo qui se met par dessus l'entete au dessus d
 
 body { /* definit les spécifications dans le body: couleur du fond*/
     background-color: #FFFAFA; /* Gris clair, change la couleur selon ton choix */
+}
+
+/* ---- Corps principal ---- */
+.main {
     display: flex;
-    flex-wrap: nowrap;
+    /*justify-content: flex-start;*/
+    gap: 20px;
+    padding: 20px;
 }
 
 /* ---- Affichage et style de l'encadré à gauche avec les hyperlinks---- */
