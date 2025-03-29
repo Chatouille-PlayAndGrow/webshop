@@ -1,4 +1,4 @@
-header {
+header { /* Entete avec fond au dessus de la page web*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,21 +10,14 @@ header {
     height: 150px;
 }
 
-header img {
+header img { /*Specifications du logo qui se met par dessus l'entete au dessus de la page web*/
     max-width: 240px; /* Ajuste la taille max du logo */
     height: auto; /* Garde les proportions */
     border-radius: 70px;  /* Ajuste l’effet des coins */
     margin-bottom: 15px; /* Ajoute un espace sous l'en-tête */
-    /* 
-    clip-path: polygon(10% 0%, 90% 0%, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0% 90%, 0% 10%); 
-    outline: 5px solid #ff6600; /* Bordure orange 
-    outline-offset: 5px; /* Espacement entre l’image et la bordure
-    
-    border: 5px solid #ff6600; /* Bordure orange 
-    */
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1600px) { /* modif de l'entete pour des écrans très large*/
     header {
         display: flex;
         justify-content: center;
@@ -36,6 +29,7 @@ header img {
         max-width: 1900px;
         height: 255px;
     }
+    
     header img {
         max-width: 350px; /* Ajuste la taille max du logo */
         height: auto; /* Garde les proportions */
@@ -44,15 +38,17 @@ header img {
     }
 }
 
-main {
+txt_descrip { /* Texte descriptif juste après l'entete*/
     text-align: center;
     margin-top: 5px;
     padding: 20px;
 }
-body {
+
+body { /* definit les spécifications dans le body: couleur du fond*/
     background-color: #FFFAFA; /* Gris clair, change la couleur selon ton choix */
 }
-.products {
+
+.products { 
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -72,7 +68,7 @@ body {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.product img {
+.product img { /*spécifications de l'image du produit*/
     width: 100%;
     border-radius: 10px;
 }
@@ -87,7 +83,7 @@ body {
     color: #555;
 }
 
-.price {
+.price { /* Spécifications de l'affichage du prix*/
     display: block;
     font-size: 16px;
     font-weight: bold;
@@ -95,7 +91,7 @@ body {
     margin: 10px 0;
 }
 
-.icons {
+.bandeau {
     display: flex;
     justify-content: flex-end; /* Alignement à droite */
     align-items: center; /* Centre verticalement */
@@ -104,26 +100,10 @@ body {
     background-color: #B8860B;
 }
 
-.box {
+.box { /* Traite du texte comme des boxs*/
     background: none; /* Pas de couleur de fond */
     /*padding: 10px 20px; /* Ajoute un peu d’espace à l’intérieur */
     font-size: 18px; /* Ajuste la taille du texte */
     color:#DB7093;
     font-weight: bold; /* Rend le texte en gras */
 }
-/*
-button {
-    background-color: #27ae60;
-    color: white;
-    border: none;
-    padding: 10px;
-    width: 100%;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-button:hover {
-    background-color: #219150;
-}
-*/
