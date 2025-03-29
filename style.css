@@ -39,13 +39,16 @@ header img { /*Specifications du logo qui se met par dessus l'entete au dessus d
     }
 }
 /* ---- Body ---- */
-txtdescrip { /* Texte descriptif juste après l'entete*/
+.txtdescrip { /* Texte descriptif juste après l'entete*/
     text-align: center;
     margin-top: 5px;
     padding: 20px;
+    width: 100%;
 }
 
 body { /* definit les spécifications dans le body: couleur du fond*/
+    display: flex;
+    flex-wrap: wrap;
     background-color: #FFFAFA; /* Gris clair, change la couleur selon ton choix */
 }
 
@@ -99,16 +102,10 @@ aside ul li a:hover {
         text-align: center;
     }
 
-    .content {
+    .prducts {
         width: 100%;
     }
 }
-/*.sidebar{ 
-    width: 25%;
-    background-color: #f4f4f4;
-    padding: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-} */
 
 /* ---- Affichage et style des produits ---- */
 .products { 
@@ -153,21 +150,4 @@ aside ul li a:hover {
     font-weight: bold;
     color: #27ae60;
     margin: 10px 0;
-}
-
-.bandeau {
-    display: flex;
-    justify-content: flex-end; /* Alignement à droite */
-    align-items: center; /* Centre verticalement */
-    gap: 15px; /* Ajoute un espace entre les boîtes */
-    padding: 10px; /* Ajoute de l'espace autour du conteneur */
-    background-color: #B8860B;
-}
-
-.box { /* Traite du texte comme des boxs*/
-    background: none; /* Pas de couleur de fond */
-    /*padding: 10px 20px; /* Ajoute un peu d’espace à l’intérieur */
-    font-size: 18px; /* Ajuste la taille du texte */
-    color:#DB7093;
-    font-weight: bold; /* Rend le texte en gras */
 }
