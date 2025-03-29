@@ -218,3 +218,18 @@ aside ul li a:hover {
     font-weight: bold;
     margin-top: 15px;
 }
+
+/* Boutons d'action */
+.btn-action {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.btn-action:hover {
+    background: #cc0000;
+}
