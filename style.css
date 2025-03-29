@@ -41,8 +41,8 @@ header img { /*Specifications du logo qui se met par dessus l'entete au dessus d
 /* ---- Body ---- */
 .txtdescrip { /* Texte descriptif juste après l'entete*/
     text-align: center;
-    /*margin-top: 5px;*/
-    padding: 20px;
+    margin-top: 5px;
+    /*padding: 20px;*/
     width: 100%;
 }
 
@@ -101,6 +101,7 @@ aside ul li a {
 
 aside ul li a:hover {
     background: #663399;
+    color: #FFFFFF
 }
 
 /* ---- Responsive : La barre latérale passe en haut ---- */
