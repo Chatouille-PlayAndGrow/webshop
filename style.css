@@ -73,12 +73,12 @@ body { /* definit les spécifications dans le body: couleur du fond*/
     border-radius: 10px;
 }
 
-.product h2 {
+.product pdt_name { /*spécifications de l'affichage du nom du produit*/
     font-size: 18px;
     margin: 10px 0;
 }
 
-.product p {
+.product pdt_descr { /*spécifications de l'affichage du descriptif du produit*/
     font-size: 14px;
     color: #555;
 }
