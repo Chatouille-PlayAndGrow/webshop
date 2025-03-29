@@ -47,8 +47,6 @@ header img { /*Specifications du logo qui se met par dessus l'entete au dessus d
 }
 
 body { /* definit les spécifications dans le body: couleur du fond*/
-    display: flex;
-    flex-wrap: wrap;
     background-color: #FFFAFA; /* Gris clair, change la couleur selon ton choix */
 }
 
