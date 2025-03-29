@@ -50,12 +50,65 @@ body { /* definit les spécifications dans le body: couleur du fond*/
 }
 
 /* ---- Affichage et style de l'encadré à gauche avec les hyperlinks---- */
-.sidebar{ 
+/* ---- Barre latérale ---- */
+aside {
     width: 25%;
     background-color: #f4f4f4;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    min-height: 100vh; /* Prend toute la hauteur */
 }
+
+aside h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+    padding: 8px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+aside ul li a:hover {
+    background: #ddd;
+}
+
+/* ---- Responsive : La barre latérale passe en haut ---- */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+        min-height: auto;
+        text-align: center;
+    }
+
+    .content {
+        width: 100%;
+    }
+}
+/*.sidebar{ 
+    width: 25%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+} */
 
 /* ---- Affichage et style des produits ---- */
 .products { 
