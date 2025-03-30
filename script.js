@@ -63,9 +63,9 @@ function afficherPanier() {
     }
 
     panier.forEach((produit, index) => {
-        let li = document.createElement("li");
-        li.innerHTML = `<td>${produit.nom}</td> <td>${produit.prix.toFixed(2)}€</td> <td>${produit.quantite}</td> <td>${(produit.prix * produit.quantite).toFixed(2)}€</td> <td><button onclick="supprimerProduit(${index})"><i class="bi bi-x-circle"></i></button></td>`;
-        listePanier.appendChild(li);
+        let tr = document.createElement("tr");
+        tr.innerHTML = `<td>${produit.nom}</td> <td>${produit.prix.toFixed(2)}€</td> <td>${produit.quantite}</td> <td>${(produit.prix * produit.quantite).toFixed(2)}€</td> <td><button onclick="supprimerProduit(${index})"><i class="bi bi-x-circle"></i></button></td>`;
+        listePanier.appendChild(tr);
         total += produit.prix * produit.quantite;
     });
 
