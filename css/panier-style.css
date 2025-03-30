@@ -42,13 +42,6 @@
 }
 
 /* Style du message "panier vide" */
-#message-vide {
-    text-align: center;
-    font-size: 18px;
-    color: #777;
-    margin-top: 15px;
-}
-
 .panier-vide {
     text-align: center;
     font-style: italic;
