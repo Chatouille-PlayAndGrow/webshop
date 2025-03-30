@@ -12,7 +12,7 @@
 /* Liste des produits */
 .liste-panier {
     list-style: none;
-    padding: 0;
+    padding: 10px;
 }
 
 .liste-panier li {
@@ -36,8 +36,8 @@
 
 /* Boutons d'action */
 .btn-action {
-    background: #ff4d4d;
-    color: white;
+    background: #FFFFFF;
+    color: #FF6347;
     border: none;
     padding: 5px 10px;
     cursor: pointer;
@@ -46,5 +46,6 @@
 }
 
 .btn-action:hover {
-    background: #cc0000;
+    background: #FF6347;
+    color: #FFFFFF;
 }
