@@ -23,7 +23,7 @@
 
 /* Style des lignes alternées */
 #table-panier tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
+    background-color: #FFF5EE;
 }
 
 /* Style des boutons de suppression */
