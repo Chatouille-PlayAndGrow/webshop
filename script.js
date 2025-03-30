@@ -54,9 +54,9 @@ function afficherPanier() {
     listePanier.innerHTML = "";
     let total = 0;
 
-    panier.forEach(produit => {
+    panier.forEach((produit, index) => {
         let li = document.createElement("li");
-        li.textContent = `${produit.nom} - ${produit.prix}€ x ${produit.quantite} <button class="btn-action" onclick="supprimerProduit(${index})">❌</button>`;
+        li.innerHTML = `${produit.nom} - ${produit.prix}€ x ${produit.quantite} <button class="btn-action" onclick="supprimerProduit(${index})">❌</button>`;
         listePanier.appendChild(li);
         total += produit.prix * produit.quantite;
     });
