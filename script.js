@@ -50,13 +50,21 @@ document.addEventListener("DOMContentLoaded", function() {
 function afficherPanier() {
     let panier = getPanier();
     let listePanier = document.getElementById("liste-panier");
+    let messageVide = document.getElementById("message-vide");
     let totalElement = document.getElementById("total");
     listePanier.innerHTML = "";
     let total = 0;
 
+     if (panier.length === 0) {
+        messageVide.style.display = "block"; // Affiche le message
+        return;
+    } else {
+        messageVide.style.display = "none"; // Cache le message
+    }
+
     panier.forEach((produit, index) => {
         let li = document.createElement("li");
-        li.innerHTML = `${produit.nom} - ${produit.prix}€ x ${produit.quantite} <button class="btn-action" onclick="supprimerProduit(${index})"><i class="bi bi-x-circle"></i></button>`;
+        li.innerHTML = `<td>${produit.nom}</td> <td>${produit.prix.toFixed(2)}€</td> <td>${produit.quantite}</td> <td>${(produit.prix * produit.quantite).toFixed(2)}€</td> <td><button onclick="supprimerProduit(${index})"><i class="bi bi-x-circle"></i></button></td>`;
         listePanier.appendChild(li);
         total += produit.prix * produit.quantite;
     });
