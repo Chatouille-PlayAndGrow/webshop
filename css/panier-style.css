@@ -11,7 +11,7 @@
 
 /* Style de l'en-tête du tableau */
 #table-panier thead {
-    background-color: #4CAF50;
+    background-color: #008080;
     color: white;
 }
 
@@ -28,8 +28,8 @@
 
 /* Style des boutons de suppression */
 #table-panier button {
-    background-color: red;
-    color: white;
+    background-color: #FFFFFF;
+    color: #FF6347;
     border: none;
     padding: 5px 10px;
     cursor: pointer;
@@ -37,7 +37,8 @@
 }
 
 #table-panier button:hover {
-    background-color: darkred;
+    background-color: #FF6347;
+    color: #FFFFFF;
 }
 
 /* Style du message "panier vide" */
@@ -48,11 +49,12 @@
     margin-top: 15px;
 }
 
-/* Affichage du total */
+/* Affichage du total 
 .total {
     text-align: center;
     font-size: 18px;
     font-weight: bold;
     margin-top: 15px;
 }
+*/
 
