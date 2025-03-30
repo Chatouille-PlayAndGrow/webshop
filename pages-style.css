@@ -1,4 +1,5 @@
 /* ---- Style de l'entete du site web ---- */
+
 header { /* Entete avec fond au dessus de la page web*/
     display: flex;
     justify-content: center;
@@ -23,7 +24,7 @@ header img { /*Specifications du logo qui se met par dessus l'entete au dessus d
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url("Images/Entete_site_logo.png"); /* Image de fond */
+        background-image: url("Entete_site_logo.png"); /* Image de fond */
         background-size: cover; /* Ajuste l’image */
         background-position: center; /* Centre l’image */
         margin-bottom: 10px; 
@@ -37,4 +38,21 @@ header img { /*Specifications du logo qui se met par dessus l'entete au dessus d
         border-radius: 70px;  /* Ajuste l’effet des coins */
         margin-bottom: 15px; /* Ajoute un espace sous l'en-tête */
     }
+}
+
+/* ---- Body ---- */
+.txtdescrip { /* Texte descriptif - après l'entete dans boutique*/
+    text-align: center;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.titlestyle { /* Titre de la page*/
+    text-align: center;
+    width: 100%;
+    font-size: 26px;
+}
+
+body { /* definit les spécifications dans le body: couleur du fond*/
+    background-color: #FFFAFA; /* Gris clair, change la couleur selon ton choix */
 }
