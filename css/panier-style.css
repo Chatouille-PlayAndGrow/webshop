@@ -11,8 +11,8 @@
 
 /* Style de l'en-tête du tableau */
 #table-panier thead {
-    background-color: #008080;
-    color: white;
+    background-color: #F5DEB3;
+    color: black;
 }
 
 #table-panier th, #table-panier td {
