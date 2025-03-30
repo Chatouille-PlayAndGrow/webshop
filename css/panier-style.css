@@ -48,12 +48,10 @@
     color: #888;
     padding: 15px;
 }
-/* Affichage du total 
-.total {
-    text-align: center;
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 15px;
+
+.total-row td {
+    text-align: right; /* Aligne le texte à droite */
+    font-weight: bold; /* Met en gras */
+    padding-right: 10px; /* Ajoute un peu d'espace à droite */
 }
-*/
 
