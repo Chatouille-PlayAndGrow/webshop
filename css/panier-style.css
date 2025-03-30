@@ -49,6 +49,12 @@
     margin-top: 15px;
 }
 
+.panier-vide {
+    text-align: center;
+    font-style: italic;
+    color: #888;
+    padding: 15px;
+}
 /* Affichage du total 
 .total {
     text-align: center;
