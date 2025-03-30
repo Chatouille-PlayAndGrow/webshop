@@ -72,6 +72,9 @@ function afficherPanier() {
     totalElement.textContent = total.toFixed(2);
 }
 
+// Appel initial pour afficher le panier dès le chargement
+document.addEventListener("DOMContentLoaded", afficherPanier);
+
 // Fonction pour supprimer un produit du panier
 function supprimerProduit(index) {
     let panier = getPanier();
@@ -81,13 +84,4 @@ function supprimerProduit(index) {
     mettreAJourCompteurPanier();
 }
 
-// Vider le panier
-document.addEventListener("DOMContentLoaded", function() {
-    let boutonVider = document.getElementById("vider-panier");
-    if (boutonVider) {
-        boutonVider.addEventListener("click", function() {
-            localStorage.removeItem("panier");
-            afficherPanier();
-        });
-    }
-});
+
