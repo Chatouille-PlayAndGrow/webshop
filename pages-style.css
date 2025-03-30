@@ -56,3 +56,66 @@ header img { /*Specifications du logo qui se met par dessus l'entete au dessus d
 body { /* definit les spécifications dans le body: couleur du fond*/
     background-color: #FFFAFA; /* Gris clair, change la couleur selon ton choix */
 }
+
+/* ---- Corps principal ---- */
+.main-content {
+    display: flex;
+    /*justify-content: flex-start;*/
+    gap: 20px;
+    padding: 20px;
+}
+
+/* ---- Affichage et style de l'encadré à gauche avec les hyperlinks---- */
+/* ---- Barre latérale ---- */
+aside {
+    width: 18%;
+    background-color: #DDA0DD;
+    padding: 20px;
+    height: 300px;
+}
+
+aside h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+    padding: 4px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+aside ul li a:hover {
+    background: #663399;
+    color: #FFFFFF
+}
+
+/* ---- Responsive : La barre latérale passe en haut ---- */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+        min-height: auto;
+        text-align: center;
+    }
+
+    .products {
+        width: 100%;
+    }
+}
