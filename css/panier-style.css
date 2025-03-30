@@ -1,29 +1,51 @@
-/* Style général du panier */
-.panier-container {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background: #FFFFFF;
-    border-radius: 10px;
+/* Style général du tableau */
+#table-panier {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 75%;
-}
-
-/* Liste des produits */
-.liste-panier {
-    list-style: none;
-    padding: 10px;
-}
-
-.liste-panier li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background: white;
-    padding: 10px;
-    margin-bottom: 8px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Style de l'en-tête du tableau */
+#table-panier thead {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#table-panier th, #table-panier td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Style des lignes alternées */
+#table-panier tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Style des boutons de suppression */
+#table-panier button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#table-panier button:hover {
+    background-color: darkred;
+}
+
+/* Style du message "panier vide" */
+#message-vide {
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+    margin-top: 15px;
 }
 
 /* Affichage du total */
@@ -34,18 +56,3 @@
     margin-top: 15px;
 }
 
-/* Boutons d'action */
-.btn-action {
-    background: #FFFFFF;
-    color: #FF6347;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 14px;
-}
-
-.btn-action:hover {
-    background: #FF6347;
-    color: #FFFFFF;
-}
