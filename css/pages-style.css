@@ -104,6 +104,24 @@ aside ul li a:hover {
 
 /* ---- Responsive : La barre latérale passe en haut ---- */
 @media (max-width: 768px) {
+    header { /* Entete avec fond au dessus de la page web */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("Fond_logo.png"); /* Image de fond */
+        background-size: cover; /* Ajuste l’image */
+        background-position: center; /* Centre l’image */
+        margin-bottom: 10px; 
+        max-width: 1000px;
+        height: 100px;
+    } 
+    
+    header img { /*Specifications du logo qui se met par dessus l'entete au dessus de la page web*/
+        max-width: 180px; /* Ajuste la taille max du logo */
+        height: auto; /* Garde les proportions */
+        border-radius: 70px;  /* Ajuste l’effet des coins */
+        margin-bottom: 15px; /* Ajoute un espace sous l'en-tête */
+    }
     body {
         flex-direction: column;
     }
