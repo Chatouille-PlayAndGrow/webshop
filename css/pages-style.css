@@ -3,7 +3,7 @@ header { /* Entete avec fond au dessus de la page web */
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("../Images/Fond_logo.png"); /* Image de fond */
+    background-image: url("/Images/Fond_logo.png"); /* Image de fond */
     background-size: cover; /* Ajuste l’image */
     background-position: center; /* Centre l’image */
     margin-bottom: 10px; 
