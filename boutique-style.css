@@ -47,3 +47,18 @@
     color: #20B2AA;
     margin: 10px 0;
 }
+
+.button-panier {
+    background-color: #008B8B; 
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.button-panier:hover {
+    background-color: #20B2AA; 
+}
