@@ -1,19 +1,15 @@
 /* ---- Style de l'entete du site web ---- */
-header {
-    background-color: red;
-}
-
-/*header { /* Entete avec fond au dessus de la page web
+header { /* Entete avec fond au dessus de la page web */
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("../Images/Entete_site_logo.png"); /* Image de fond 
-    background-size: cover; /* Ajuste l’image 
-    background-position: center; /* Centre l’image 
+    background-image: url("../Images/Entete_site_logo.png"); /* Image de fond */
+    background-size: cover; /* Ajuste l’image */
+    background-position: center; /* Centre l’image */
     margin-bottom: 10px; 
     max-width: 1600px;
     height: 150px;
-} */
+} 
 
 header img { /*Specifications du logo qui se met par dessus l'entete au dessus de la page web*/
     max-width: 240px; /* Ajuste la taille max du logo */
