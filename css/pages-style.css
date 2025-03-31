@@ -127,8 +127,14 @@ aside ul li a:hover {
     }
 
     aside {
+        order: -1; 
         width: 100%;
         min-height: auto;
         text-align: center;
+        
+    }
+
+    .products {
+        width: 100%;
     }
 }
