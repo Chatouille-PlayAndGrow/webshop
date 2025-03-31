@@ -47,7 +47,6 @@
 .product-footer {
     display: flex;
     justify-content: flex-end; /* Aligne le prix à gauche et le bouton à droite */
-    align-items: center; /* Centre verticalement */
     margin-top: 10px;
     padding: 0 10px;
     gap: 15px;
