@@ -54,6 +54,7 @@ header img { /*Specifications du logo qui se met par dessus l'entete au dessus d
 
 body { /* definit les spécifications dans le body: couleur du fond*/
     background-color: #FFFAFA; /* Gris clair, change la couleur selon ton choix */
+    font-family: Comic Sans MS, Comic Sans, cursive;
 }
 
 /* ---- Corps principal ---- */
