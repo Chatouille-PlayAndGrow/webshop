@@ -115,6 +115,7 @@ aside ul li a:hover {
         min-height: auto;
         text-align: center;
         padding: 10px 0;
+        border: 2px solid red; /* Debug temporaire */
     }
 
     .products {
