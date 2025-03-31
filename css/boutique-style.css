@@ -28,7 +28,8 @@
     width: 90%;
     border-radius: 10px;
     max-height: 200px; /* Limite la taille de l'image à 200px */
-    object-fit: cover; /* Pour que l'image soit bien adaptée sans déformation */
+    object-fit: contain; /* Pour que l'image reste entière*/
+    display: block;
 }
 
 .product h2 { /*spécifications de l'affichage du nom du produit*/
