@@ -59,7 +59,7 @@ body { /* definit les spécifications dans le body: couleur du fond*/
 /* ---- Corps principal ---- */
 .main-content {
     display: flex;
-    /*justify-content: flex-start;*/
+    align-items: flex-start; /* Aligne les éléments en haut */
     gap: 20px;
     padding: 20px;
 }
