@@ -14,7 +14,7 @@
 }
 
 .product {
-    width: 300px;
+    width: 200px;
     height: 300px;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -25,11 +25,12 @@
 }
 
 .product img { /*spécifications de l'image du produit*/
-    width: 90%;
+    width: 70%;
     border-radius: 10px;
-    max-height: 200px; /* Limite la taille de l'image à 200px */
+    max-height: 150px; /* Limite la taille de l'image à 200px */
     object-fit: contain; /* Pour que l'image reste entière*/
     display: block;
+    margin: 0 auto; /* Centre horizontalement */
 }
 
 .product h2 { /*spécifications de l'affichage du nom du produit*/
