@@ -41,7 +41,8 @@
 .product p { /*spécifications de l'affichage du descriptif du produit*/
     font-size: 14px;
     color: #555;
-    margin: 10px 0;
+    margin: 0 auto;
+    width: 70%
 }
 
 .product-footer {
