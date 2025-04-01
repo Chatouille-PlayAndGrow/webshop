@@ -92,7 +92,6 @@ document.getElementById("commander").addEventListener("click", function() {
         alert("Votre panier est vide !");
     } else {
         // Ici, tu peux envoyer les infos du panier à une page de paiement
-        alert("Votre commande est confirmée !");
         fetch("envoyer_commande.php", {
             method: "POST",
             headers: {
