@@ -52,11 +52,11 @@
     justify-content: flex-end; /* Aligne le prix à gauche et le bouton à droite */
     margin-top: 10px;
     padding: 0 10px;
-    gap: 15px;
+    gap: 20px;
 }
 
 .price { /* Spécifications de l'affichage du prix*/
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     color: #20B2AA;
     margin: 10px 0;
