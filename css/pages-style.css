@@ -105,7 +105,7 @@ aside ul li a:hover {
 }
 
 footer {
-    position: fixed; /* Fixe le footer en bas */
+    /*position: fixed; /* Fixe le footer en bas */
     bottom: 0;
     left: 0;
     width: 100%; /* Prend toute la largeur */
