@@ -31,7 +31,7 @@
 
 .product h2 { /*spécifications de l'affichage du nom du produit*/
     font-size: 15px;
-    margin: 0 auto;
+    margin: 10px auto;
     width: 85%;
 }
 
