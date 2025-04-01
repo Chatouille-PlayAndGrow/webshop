@@ -55,3 +55,21 @@
     padding-right: 10px; /* Ajoute un peu d'espace à droite */
 }
 
+/* Bouton pour commander */
+.button-commander {
+    background-color: #008B8B; 
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: block;
+    margin: 20px auto; /* Centre le bouton */
+}
+
+.button-commander:hover {
+    background-color: #20B2AA;
+}
+
