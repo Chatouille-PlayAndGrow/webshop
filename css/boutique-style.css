@@ -4,10 +4,6 @@
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
-    /*padding: 15px;*/
-    /*max-width: 1000px; /* Pour éviter que ça prenne toute la largeur */
-    /*margin: auto; */
-    /*width: 75%;*/
     flex: 1;
     height: auto;
     max-height: 200px;
@@ -35,9 +31,8 @@
 
 .product h2 { /*spécifications de l'affichage du nom du produit*/
     font-size: 15px;
-    margin: 10px 0;
+    margin: 0 auto;
     width: 85%;
-    text-align: justify;
 }
 
 .product p { /*spécifications de l'affichage du descriptif du produit*/
