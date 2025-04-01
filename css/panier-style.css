@@ -6,6 +6,7 @@
     background: white;
     border-radius: 10px;
     overflow: hidden;
+    flex: 1;
 }
 
 /* Style de l'en-tête du tableau */
