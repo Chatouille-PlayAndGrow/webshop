@@ -111,7 +111,7 @@ footer {
     background-color: #708090; /* Fond sombre */
     color: white; /* Texte blanc */
     text-align: left; /* Texte centré */
-    padding: 10px 0; /* Espacement haut et bas */
+    padding: 10px 20px; /* Espacement haut et bas */
     font-size: 14px;
     position: relative; /* S'assure qu'il ne flotte pas sur le contenu */
     clear: both; /* Évite le chevauchement avec les éléments flottants */
