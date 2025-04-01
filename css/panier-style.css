@@ -6,7 +6,7 @@
     background: white;
     border-radius: 10px;
     overflow: hidden;
-    flex: 1;
+    width: 100%;
 }
 
 /* Style de l'en-tête du tableau */
@@ -57,7 +57,6 @@
 
 .panier-container {
     width: 100%;
-    /*max-width: 1000px;*/
     margin: 0 auto; /* Centrage du tableau */
 }
 
