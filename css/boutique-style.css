@@ -6,7 +6,7 @@
     flex-wrap: wrap;
     flex: 1;
     height: auto;
-    max-height: 200px;
+    /*max-height: 200px;*/
 }
 
 .product {
