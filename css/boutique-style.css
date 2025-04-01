@@ -36,6 +36,7 @@
 .product h2 { /*spécifications de l'affichage du nom du produit*/
     font-size: 15px;
     margin: 10px 0;
+    width: 85%;
 }
 
 .product p { /*spécifications de l'affichage du descriptif du produit*/
