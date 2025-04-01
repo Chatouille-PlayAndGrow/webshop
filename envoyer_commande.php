@@ -4,7 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $panier = $data["panier"];
     
     $email_client = "client@example.com"; // Remplace par l'email du client
-    $email_admin = "tonemail@tonsite.com";
+    $email_admin = "emma_pion_pro@hotmail.com";
 
     // Construire le message
     $message_client = "Merci pour votre commande ! Voici le récapitulatif :\n\n";
