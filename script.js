@@ -93,6 +93,16 @@ document.getElementById("commander").addEventListener("click", function() {
     } else {
         // Ici, tu peux envoyer les infos du panier à une page de paiement
         alert("Votre commande est confirmée !");
+        fetch("envoyer_commande.php", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ panier: panier }),
+        })
+        .then(response => response.text())
+        .then(data => alert(data))
+        .catch(error => console.error("Erreur :", error));
         
         // Optionnel : vider le panier après la commande
         localStorage.removeItem("panier");
