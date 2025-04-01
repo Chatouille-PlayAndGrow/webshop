@@ -104,6 +104,18 @@ aside ul li a:hover {
     color: #FFFFFF
 }
 
+footer {
+    position: fixed; /* Fixe le footer en bas */
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Prend toute la largeur */
+    background-color: #333; /* Fond sombre */
+    color: white; /* Texte blanc */
+    text-align: center; /* Texte centré */
+    padding: 10px 0; /* Espacement haut et bas */
+    font-size: 14px;
+}
+
 /* ---- Responsive : La barre latérale passe en haut ---- */
 @media (max-width: 768px) {
     .main-content {
