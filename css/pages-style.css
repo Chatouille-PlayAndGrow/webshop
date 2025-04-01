@@ -109,9 +109,9 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%; /* Prend toute la largeur */
-    background-color: #333; /* Fond sombre */
+    background-color: #708090; /* Fond sombre */
     color: white; /* Texte blanc */
-    text-align: center; /* Texte centré */
+    text-align: left; /* Texte centré */
     padding: 10px 0; /* Espacement haut et bas */
     font-size: 14px;
 }
