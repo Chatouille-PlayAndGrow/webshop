@@ -37,6 +37,7 @@
     font-size: 15px;
     margin: 10px 0;
     width: 85%;
+    text-align: justify;
 }
 
 .product p { /*spécifications de l'affichage du descriptif du produit*/
