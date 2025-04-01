@@ -84,4 +84,18 @@ function supprimerProduit(index) {
     mettreAJourCompteurPanier();
 }
 
+// Gestion du bouton commande
+document.getElementById("commander").addEventListener("click", function() {
+    let panier = JSON.parse(localStorage.getItem("panier")) || [];
 
+    if (panier.length === 0) {
+        alert("Votre panier est vide !");
+    } else {
+        // Ici, tu peux envoyer les infos du panier à une page de paiement
+        alert("Votre commande est confirmée !");
+        
+        // Optionnel : vider le panier après la commande
+        localStorage.removeItem("panier");
+        window.location.reload(); // Recharge la page
+    }
+});
