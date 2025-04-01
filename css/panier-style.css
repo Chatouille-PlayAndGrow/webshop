@@ -55,6 +55,12 @@
     padding-right: 10px; /* Ajoute un peu d'espace à droite */
 }
 
+.panier-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto; /* Centrage du tableau */
+}
+
 /* Bouton pour commander */
 .commande-container {
     display: flex;
