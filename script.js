@@ -86,15 +86,27 @@ function supprimerProduit(index) {
 
 // Gestion du bouton commande
 document.getElementById("commander").addEventListener("click", function() {
-    let panier = JSON.parse(localStorage.getItem("panier")) || [];
+    let panier = getPanier();
 
     if (panier.length === 0) {
         alert("Votre panier est vide !");
     } else {
-        // Ici, tu peux envoyer les infos du panier à une page de paiement
-        alert("Commande confirmée!");
-        // Optionnel : vider le panier après la commande
-        localStorage.removeItem("panier");
-        window.location.reload(); // Recharge la page
+        let clientEmail = prompt("Entrez votre email pour la confirmation de commande :");
+
+        if (clientEmail) {
+            let commandes = JSON.parse(localStorage.getItem("commandes")) || [];
+            let nouvelleCommande = {
+                client: clientEmail,
+                details: panier.map(p => `${p.nom} x${p.quantite}`).join(", "),
+                statut: "En attente"
+            };
+
+            commandes.push(nouvelleCommande);
+            localStorage.setItem("commandes", JSON.stringify(commandes));
+
+            alert("Commande confirmée ! Vérifiez votre email.");
+            localStorage.removeItem("panier");
+            window.location.reload();
+        }
     }
 });
