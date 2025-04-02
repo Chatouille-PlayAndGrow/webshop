@@ -122,6 +122,9 @@ document.getElementById("commander").addEventListener("click", function() {
 function afficherCommandes() {
     let commandes = getCommandes();
     let listeCommandes = document.getElementById("liste-commandes");
+
+    console.log("Commandes récupérées :", commandes);
+    console.log("Element listeCommandes trouvé ?", listeCommandes); // Vérifie si l'élément existe
     
     if (!listeCommandes) return; // Empêche l'erreur si on n'est pas sur la page commandes
 
