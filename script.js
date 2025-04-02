@@ -110,7 +110,11 @@ document.getElementById("commander").addEventListener("click", function() {
         saveCommandes(commandes);
 
         alert("Commande confirmée !");
+
+        // Vider le panier après la commande
         localStorage.removeItem("panier");
+        // Mettre à jour l'affichage du panier
+        afficherPanier();
     }
 });
 
