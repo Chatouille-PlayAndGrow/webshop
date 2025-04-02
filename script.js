@@ -104,6 +104,9 @@ document.getElementById("commander").addEventListener("click", function() {
             commandes.push(nouvelleCommande);
             localStorage.setItem("commandes", JSON.stringify(commandes));
 
+            console.log("Commande enregistrée :", nouvelleCommande); // DEBUG
+            console.log("Toutes les commandes enregistrées :", commandes); // DEBUG
+
             alert("Commande confirmée ! Vérifiez votre email.");
             localStorage.removeItem("panier");
             window.location.reload();
