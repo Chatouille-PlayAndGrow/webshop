@@ -100,15 +100,6 @@ document.getElementById("commander").addEventListener("click", function() {
     if (panier.length === 0) {
         alert("Votre panier est vide !");
     } else {
-        let date = new Date().toLocaleString();
-        let produitsListe = panier.map(p => `${p.nom} (x${p.quantite})`).join(", ");
-        let total = document.getElementById("total").textContent;
-
-        // Sauvegarde la commande dans localStorage
-        let commandes = getCommandes();
-        commandes.push({ date, produits: produitsListe, total });
-        saveCommandes(commandes);
-
         alert("Commande confirmée !");
 
         // Vider le panier après la commande
@@ -117,29 +108,3 @@ document.getElementById("commander").addEventListener("click", function() {
         afficherPanier();
     }
 });
-
-// Affichage des commandes dans commandes.html
-function afficherCommandes() {
-    let commandes = getCommandes();
-    let listeCommandes = document.getElementById("liste-commandes");
-
-    console.log("Commandes récupérées :", commandes);
-    console.log("Element listeCommandes trouvé ?", listeCommandes); // Vérifie si l'élément existe
-    
-    if (!listeCommandes) return; // Empêche l'erreur si on n'est pas sur la page commandes
-
-    listeCommandes.innerHTML = "";
-    commandes.forEach(commande => {
-        let ligne = document.createElement("tr");
-        ligne.innerHTML = `
-            <td>${commande.date}</td>
-            <td>${commande.produits}</td>
-            <td>${commande.total}€</td>
-        `;
-        listeCommandes.appendChild(ligne);
-    });
-}
-
-// Afficher l'historique des commandes au chargement de commandes.html
-document.addEventListener("DOMContentLoaded", afficherCommandes);
-
