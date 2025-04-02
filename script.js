@@ -84,6 +84,16 @@ function supprimerProduit(index) {
     mettreAJourCompteurPanier();
 }
 
+// Fonction pour récupérer les commandes depuis localStorage
+function getCommandes() {
+    return JSON.parse(localStorage.getItem("commandes")) || [];
+}
+
+// Fonction pour sauvegarder les commandes dans localStorage
+function saveCommandes(commandes) {
+    localStorage.setItem("commandes", JSON.stringify(commandes));
+}
+
 document.getElementById("commander").addEventListener("click", function() {
     let panier = getPanier();
 
