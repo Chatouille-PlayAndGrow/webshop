@@ -107,7 +107,7 @@ document.getElementById("commander").addEventListener("click", function() {
             },
             body: JSON.stringify({
                 date,
-                produits: produitsListe,
+                produits: panier,
                 total
             })
         })
