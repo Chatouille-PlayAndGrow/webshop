@@ -100,6 +100,7 @@ document.getElementById("commander").addEventListener("click", function() {
     if (panier.length === 0) {
         alert("Votre panier est vide !");
     } else {
+        alert("on est dans le else");
         fetch('http://localhost:3000/api/commandes', {
             method: 'POST',
             headers: {
