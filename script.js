@@ -102,8 +102,26 @@ document.getElementById("commander").addEventListener("click", function() {
     } else {
         alert("Commande confirmée !");
 
-        // Vider le panier après la commande
-        localStorage.removeItem("panier");
+        fetch('http://localhost:3000/api/commandes', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                date,
+                produits: produitsListe,
+                total
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
+            alert("Commande enregistrée et confirmée !");
+            localStorage.removeItem("panier");
+            window.location.reload();
+        })
+        .catch(error => {
+            console.error('Erreur lors de l\'enregistrement de la commande :', error);
+        });
         // Mettre à jour l'affichage du panier
         afficherPanier();
     }
