@@ -101,6 +101,10 @@ document.getElementById("commander").addEventListener("click", function() {
         alert("Votre panier est vide !");
     } else {
         alert("on est dans le else");
+        
+        let date = new Date().toISOString();
+        let total = parseFloat(document.getElementById("total").textContent);
+        
         fetch('http://localhost:3000/api/commandes', {
             method: 'POST',
             headers: {
