@@ -100,31 +100,9 @@ document.getElementById("commander").addEventListener("click", function() {
     if (panier.length === 0) {
         alert("Votre panier est vide !");
     } else {
-        alert("on est dans le else");
-        
-        let date = new Date().toISOString();
-        let total = parseFloat(document.getElementById("total").textContent);
-        
-        fetch('http://localhost:3000/api/commandes', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                date,
-                produits: panier,
-                total
-            })
-        })
-        .then(response => response.json())
-        .then(data => {
-            alert("Commande enregistrée et confirmée !");
-            localStorage.removeItem("panier");
-            window.location.reload();
-        })
-        .catch(error => {
-            console.error('Erreur lors de l\'enregistrement de la commande :', error);
-        });
+        alert("Commande confirmée!");
+
+        localStorage.removeItem("panier");
         // Mettre à jour l'affichage du panier
         afficherPanier();
     }
