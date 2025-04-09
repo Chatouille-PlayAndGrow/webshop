@@ -85,17 +85,31 @@ function supprimerProduit(index) {
 }
 
 document.getElementById("commander").addEventListener("click", function() {
-    let panier = JSON.parse(localStorage.getItem("panier")) || [];
+    let panier = getPanier();
 
     if (panier.length === 0) {
-     alert("Votre panier est vide !");
-    
-    } else {
-        // Ici, tu peux envoyer les infos du panier à une page de paiement
-        alert("Votre commande est confirmée !");
-     
-        // Optionnel : vider le panier après la commande
-        localStorage.removeItem("panier");
-        window.location.reload(); // Recharge la page
+        alert("Votre panier est vide !");
+        return;
     }
+
+    // Créer le contenu de l'email
+    let contenu = panier.map(p =>
+        `${p.nom} - ${p.quantite} x ${p.prix.toFixed(2)}€ = ${(p.quantite * p.prix).toFixed(2)}€`
+    ).join("\n");
+
+    let total = panier.reduce((t, p) => t + p.prix * p.quantite, 0).toFixed(2);
+
+    // Envoyer l'email avec EmailJS
+    emailjs.send("service_wwi2hca", "template_8qiiggq", {
+        produits: contenu,
+        total: total
+    })
+    .then(function () {
+        alert("Commande envoyée par email !");
+        localStorage.removeItem("panier");
+        afficherPanier(); // ou window.location.reload();
+    }, function (error) {
+        console.error("Erreur:", error);
+        alert("Erreur lors de l'envoi de l'email.");
+    });
 });
