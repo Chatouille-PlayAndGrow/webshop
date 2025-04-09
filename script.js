@@ -104,10 +104,8 @@ document.getElementById("commander").addEventListener("click", function() {
     alert("ici");
     // Envoyer l'email avec EmailJS
     emailjs.send("service_wwi2hca", "template_8qiiggq", {
-        //produits: contenu,
-        produits: coucou,
-        total: 9.99,
-        //total: total,
+        produits: contenu,
+        total: total,
         email: emailClient
     })
         
