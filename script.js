@@ -84,26 +84,18 @@ function supprimerProduit(index) {
     mettreAJourCompteurPanier();
 }
 
-// Fonction pour récupérer les commandes depuis localStorage
-function getCommandes() {
-    return JSON.parse(localStorage.getItem("commandes")) || [];
-}
-
-// Fonction pour sauvegarder les commandes dans localStorage
-function saveCommandes(commandes) {
-    localStorage.setItem("commandes", JSON.stringify(commandes));
-}
-
 document.getElementById("commander").addEventListener("click", function() {
-    let panier = getPanier();
+    let panier = JSON.parse(localStorage.getItem("panier")) || [];
 
     if (panier.length === 0) {
-        alert("Votre panier est vide !");
+     alert("Votre panier est vide !");
+    
     } else {
-        alert("Commande confirmée!");
-
+        // Ici, tu peux envoyer les infos du panier à une page de paiement
+        alert("Votre commande est confirmée !");
+     
+        // Optionnel : vider le panier après la commande
         localStorage.removeItem("panier");
-        // Mettre à jour l'affichage du panier
-        afficherPanier();
+        window.location.reload(); // Recharge la page
     }
 });
