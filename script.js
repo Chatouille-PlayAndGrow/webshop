@@ -92,6 +92,7 @@ document.getElementById("commander").addEventListener("click", function() {
         return;
     }
 
+    alert("ok ok");
     let emailClient = prompt("Veuillez entrer votre adresse email pour recevoir la confirmation :");
 
     // Créer le contenu de l'email
