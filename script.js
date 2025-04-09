@@ -92,6 +92,8 @@ document.getElementById("commander").addEventListener("click", function() {
         return;
     }
 
+    let emailClient = prompt("Veuillez entrer votre adresse email pour recevoir la confirmation :");
+
     // Créer le contenu de l'email
     let contenu = panier.map(p =>
         `${p.nom} - ${p.quantite} x ${p.prix.toFixed(2)}€ = ${(p.quantite * p.prix).toFixed(2)}€`
@@ -102,7 +104,8 @@ document.getElementById("commander").addEventListener("click", function() {
     // Envoyer l'email avec EmailJS
     emailjs.send("service_wwi2hca", "template_8qiiggq", {
         produits: contenu,
-        total: total
+        total: total,
+        email: emailClient
     })
     .then(function () {
         alert("Commande envoyée par email !");
