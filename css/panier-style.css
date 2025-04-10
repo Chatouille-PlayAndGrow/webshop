@@ -81,3 +81,12 @@
     background-color: #FFD700;
 }
 
+#form-client,
+.commande-container {
+  transition: opacity 0.4s ease;
+}
+
+.hidden {
+  display: none;
+}
+
