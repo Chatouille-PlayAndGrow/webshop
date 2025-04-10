@@ -119,7 +119,9 @@ document.getElementById("commander").addEventListener("click", function() {
     })
         
     .then(function () {
-        alert("Commande envoyée par email !");
+        //alert("Commande envoyée par email !");
+        // Affiche un message de confirmation
+        document.getElementById("confirmation-message").style.display = "block";
         localStorage.removeItem("panier");
         afficherPanier(); // ou window.location.reload();
         document.getElementById("form-client").reset(); // 👈 vide tous les champs du formulaire
