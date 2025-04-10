@@ -123,9 +123,9 @@ document.getElementById("commander").addEventListener("click", function() {
         localStorage.removeItem("panier");
         afficherPanier();
     
-        // Masquer le formulaire et le bouton
-        document.getElementById("form-client").classList.add("hidden");
-        document.querySelector(".commande-container").classList.add("hidden");
+        // Masquer le formulaire et le bouton en modifiant le style
+        document.getElementById("form-client").style.display = "none";
+        document.querySelector(".commande-container").style.display = "none";
     
         // Réinitialiser le formulaire au cas où
         document.getElementById("form-client").reset();
