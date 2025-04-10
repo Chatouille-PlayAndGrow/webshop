@@ -122,6 +122,7 @@ document.getElementById("commander").addEventListener("click", function() {
         alert("Commande envoyée par email !");
         localStorage.removeItem("panier");
         afficherPanier(); // ou window.location.reload();
+        document.getElementById("form-client").reset(); // 👈 vide tous les champs du formulaire
     }, function (error) {
         console.error("Erreur:", error);
         alert("Erreur lors de l'envoi de l'email.");
