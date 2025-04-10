@@ -81,6 +81,18 @@
     background-color: #FFD700;
 }
 
+#confirmation-message {
+    display: none; /* Caché par défaut */
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid green;
+    background-color: #e6ffed;
+    color: #2e7d32;
+    border-radius: 8px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
 #form-client,
 .commande-container {
   transition: opacity 0.4s ease;
