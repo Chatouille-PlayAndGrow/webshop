@@ -96,7 +96,6 @@ document.getElementById("commander").addEventListener("click", function() {
     let nom = document.getElementById("client-nom").value.trim();
     let email = document.getElementById("client-email").value.trim();
     let adresse = document.getElementById("client-adresse").value.trim();
-    let tel = document.getElementById("client-tel").value.trim();
 
     if (!nom || !email || !adresse) {
         alert("Veuillez remplir tous les champs obligatoires.");
