@@ -63,7 +63,7 @@
 /* Bouton pour commander */
 .commande-container {
     display: flex;
-    justify-content: flex-end; /* Aligne à droite */
+    justify-content: flex-start; /* Aligne à gauche*/
     margin-top: 20px; /* Espace entre le tableau et le bouton */
 }
 
