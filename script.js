@@ -119,12 +119,20 @@ document.getElementById("commander").addEventListener("click", function() {
     })
         
     .then(function () {
-        //alert("Commande envoyée par email !");
-        // Affiche un message de confirmation
-        document.getElementById("confirmation-message").style.display = "block";
+        // Vider panier
         localStorage.removeItem("panier");
-        afficherPanier(); // ou window.location.reload();
-        document.getElementById("form-client").reset(); // 👈 vide tous les champs du formulaire
+        afficherPanier();
+    
+        // Masquer le formulaire et le bouton
+        document.getElementById("form-client").classList.add("hidden");
+        document.querySelector(".commande-container").classList.add("hidden");
+    
+        // Réinitialiser le formulaire au cas où
+        document.getElementById("form-client").reset();
+    
+        // Afficher le message de confirmation
+        const messageDiv = document.getElementById("confirmation-message");
+        messageDiv.style.display = "block";
     }, function (error) {
         console.error("Erreur:", error);
         alert("Erreur lors de l'envoi de l'email.");
