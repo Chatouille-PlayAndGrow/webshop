@@ -92,7 +92,16 @@ document.getElementById("commander").addEventListener("click", function() {
         return;
     }
 
-    let emailClient = prompt("Veuillez entrer votre adresse email pour recevoir la confirmation :");
+    // Récupération des infos client
+    let nom = document.getElementById("client-nom").value.trim();
+    let email = document.getElementById("client-email").value.trim();
+    let adresse = document.getElementById("client-adresse").value.trim();
+    let tel = document.getElementById("client-tel").value.trim();
+
+    if (!nom || !email || !adresse) {
+        alert("Veuillez remplir tous les champs obligatoires.");
+        return;
+    }
 
     // Créer le contenu de l'email
     let contenu = panier.map(p =>
@@ -105,7 +114,9 @@ document.getElementById("commander").addEventListener("click", function() {
     emailjs.send("service_wwi2hca", "template_8qiiggq", {
         produits: contenu,
         total: total,
-        email: emailClient
+        email: email,
+        nom: nom,
+        adresse: adresse
     })
         
     .then(function () {
