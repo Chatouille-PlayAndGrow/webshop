@@ -140,10 +140,12 @@ document.getElementById("commander").addEventListener("click", function() {
 });
 
 // Gestion du clic sur le bouton
-document.querySelectorAll('.accordion').forEach(button => {
-  button.addEventListener('click', () => {
-    button.classList.toggle('active');
-    const panel = button.nextElementSibling;
-    panel.classList.toggle('show');
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll('.accordion').forEach(button => {
+    button.addEventListener('click', () => {
+      button.classList.toggle('active');
+      const panel = button.nextElementSibling;
+      panel.classList.toggle('show');
+    });
   });
 });
