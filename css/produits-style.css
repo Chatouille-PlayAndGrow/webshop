@@ -14,7 +14,6 @@
 
 .panel {
   padding: 10px;
-  display: flex;
   background: #f9f9f9;
   border: 1px solid #ccc;
 }
