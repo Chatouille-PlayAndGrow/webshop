@@ -1,19 +1,22 @@
 .accordion {
-  pointer-events: none;
-  padding: 10px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  border-radius: 10px;
-  background: #FFEBCD;
+  background-color: #FFF5E1;
+  border: 2px solid #FFD6A5;
+  border-radius: 12px 12px 0 0;
+  padding: 12px 16px;
   font-weight: bold;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  font-family: 'Alice', serif;
+  font-size: 18px;
+  color: #5C4033;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .panel {
-  padding: 10px;
-  background: #f9f9f9;
-  border: 1px solid #ccc;
+  background-color: #FFFAF2;
+  border: 2px solid #FFD6A5;
+  border-top: none;
+  border-radius: 0 0 12px 12px;
+  padding: 14px 16px;
+  font-family: 'Alice', serif;
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
 }
