@@ -1,5 +1,4 @@
 .accordion {
-  cursor: pointer;
   padding: 10px;
   width: 100%;
   text-align: left;
@@ -14,7 +13,7 @@
 
 .panel {
   padding: 10px;
-  display: none;
+  display: flex;
   background: #f9f9f9;
   border: 1px solid #ccc;
 }
