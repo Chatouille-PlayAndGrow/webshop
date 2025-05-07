@@ -4,6 +4,7 @@
   width: 100%;
   text-align: left;
   border: none;
+  border-radius: 10px;
   background: #FFEBCD;
   font-weight: bold;
   display: flex;
