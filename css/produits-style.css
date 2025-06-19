@@ -1,8 +1,8 @@
 .description-bloc {
   display: inline-block;
-  border: 2px solid #9370DB;
+  border: 1px solid #D8CFF4;
   border-radius: 12px;
-  background-color: #FCF9FF;
+  background-color: #E6D9FA;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
   overflow: hidden;
   width: 100%;
