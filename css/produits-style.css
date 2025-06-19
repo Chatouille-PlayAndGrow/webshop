@@ -5,14 +5,13 @@
   background-color: #9370DB;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
   overflow: hidden;
-  margin-top: 20px;
   width: 100%;
 }
 
 .accordion {
   background: transparent;
   border: none;
-  padding: 5px 10px;
+  padding: 10px 10px;
   font-weight: bold;
   font-family: 'Alice', serif;
   font-size: 18px;
@@ -20,7 +19,7 @@
 }
 
 .panel {
-  padding: 14px 16px;
+  padding: 14px 8px;
   font-family: 'Alice', serif;
   color: #333;
 }
