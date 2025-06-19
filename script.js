@@ -63,7 +63,12 @@ function afficherPanier() {
     } else {
         panier.forEach((produit, index) => {
             let ligne = document.createElement("tr");
-            ligne.innerHTML = `<td>${produit.nom}</td> <td>${produit.prix.toFixed(2)}€</td> <td>${produit.quantite}</td> <td>${(produit.prix * produit.quantite).toFixed(2)}€</td> <td><button onclick="supprimerProduit(${index})"><i class="bi bi-x-circle"></i></button></td>`;
+            // Création de la liste déroulante des quantités
+            let options = "";
+            for (let i = 1; i <= 10; i++) {
+                options += `<option value="${i}" ${i === produit.quantite ? 'selected' : ''}>${i}</option>`;
+            }
+            ligne.innerHTML = `<td>${produit.nom}</td> <td>${produit.prix.toFixed(2)}€</td> <td><select onchange="modifierQuantite(${index}, this.value)"> ${options} </select></td> <td>${(produit.prix * produit.quantite).toFixed(2)}€</td> <td><button onclick="supprimerProduit(${index})"><i class="bi bi-x-circle"></i></button></td>`;
             listePanier.appendChild(ligne);
             total += produit.prix * produit.quantite;
         });
@@ -74,6 +79,18 @@ function afficherPanier() {
 
 // Appel initial pour afficher le panier dès le chargement
 document.addEventListener("DOMContentLoaded", afficherPanier);
+
+// Fct pour modifier la quantité d'un produit
+function modifierQuantite(index, nouvelleQuantite) {
+    let panier = getPanier();
+    nouvelleQuantite = parseInt(nouvelleQuantite);
+
+    if (nouvelleQuantite >= 1) {
+        panier[index].quantite = nouvelleQuantite;
+        localStorage.setItem("panier", JSON.stringify(panier));
+        afficherPanier(); // recharge l'affichage
+    }
+}
 
 // Fonction pour supprimer un produit du panier
 function supprimerProduit(index) {
