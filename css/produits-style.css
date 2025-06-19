@@ -1,18 +1,18 @@
 .description-bloc {
   display: inline-block;
-  border: 2px solid #FFD6A5;
+  border: 2px solid #8A2BE2;
   border-radius: 12px;
-  background-color: #FFFAF2;
+  background-color: #9370DB;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
   overflow: hidden;
   margin-top: 20px;
-  width: auto;
+  width: 100%;
 }
 
 .accordion {
   background: transparent;
   border: none;
-  padding: 12px 10px;
+  padding: 5px 10px;
   font-weight: bold;
   font-family: 'Alice', serif;
   font-size: 18px;
